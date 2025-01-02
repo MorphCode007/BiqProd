@@ -107,7 +107,7 @@ export async function customerSubscriptionDeleted(event: Stripe.Event) {
         projectId: workspace.id,
       },
       data: {
-        dublink: false,
+        biqli: false,
       },
     }),
 
