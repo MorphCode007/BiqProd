@@ -43,7 +43,7 @@ export const POST = withWorkspaceEdge(
             where: { id: workspace.id.replace("ws_", "") },
             data: {
               aiUsage: {
-                increment: 1,
+                increment: 0.7,
               },
             },
           }),
