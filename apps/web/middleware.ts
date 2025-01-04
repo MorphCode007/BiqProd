@@ -2,7 +2,7 @@ import {
   AdminMiddleware,
   ApiMiddleware,
   AppMiddleware,
-//  AxiomMiddleware,
+  AxiomMiddleware,
   CreateLinkMiddleware,
   LinkMiddleware,
 } from "@/lib/middleware";
@@ -34,7 +34,7 @@ export const config = {
 export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
   const { domain, path, key, fullKey } = parse(req);
 
- // AxiomMiddleware(req, ev);
+  AxiomMiddleware(req, ev);
 
   // for App
   if (APP_HOSTNAMES.has(domain)) {
